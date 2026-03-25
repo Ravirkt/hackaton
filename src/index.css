@@ -5,14 +5,13 @@
 }
 
 @font-face {
-  font-family: 'jet brains';
+  font-family: "jet brains";
   src: url(./assets/fonts/JetBrainsMono-VariableFont_wght.ttf);
 }
 
 :root {
-
   /* colors  */
-  --accent: #EB5C35;
+  --accent: #eb5c35;
   --main-text-color: #ffffff;
 
   /* padding */
@@ -36,19 +35,16 @@
   /* 96px */
 }
 
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent: #EB5C35;
-  --main-text-color: #000000;
+    --accent: #eb5c35;
+    --main-text-color: #ffffff;
   }
-
 }
-
 
 html,
 body {
-  font-family: 'jet brains', sans-serif;
+  font-family: "jet brains", sans-serif;
 
   h1 {
     font-size: clamp(2rem, 5vw, 3rem);
