@@ -1,0 +1,23 @@
+.navigation-items {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.all-companies-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.all-companies-container li a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
