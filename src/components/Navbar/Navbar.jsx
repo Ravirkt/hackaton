@@ -7,13 +7,13 @@ function Navbar({ onNavigate }) {
         <li className='company-item'><a onClick={() => onNavigate(0)}>Cosine</a></li>
         <li className='company-item'><a onClick={() => onNavigate(1)}>Spherical</a></li>
         <li className='company-item'><a onClick={() => onNavigate(2)}>NLR</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(3)}>Airbus</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(4)}>Technolution</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(5)}>Dawn</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(6)}>Starion</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(7)}>VDL ETG</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(8)}>Airborne</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(9)}>ISISpace</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(3)}>Dawn</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(4)}>Airbus</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(5)}>Technolution</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(6)}>Airborne</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(7)}>ISISpace</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(8)}>Starion</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(9)}>VDL</a></li>
         <li className='company-item'><a onClick={() => onNavigate(10)}>Celestia</a></li>
       </ul>
     </nav>
