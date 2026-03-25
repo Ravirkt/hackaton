@@ -3,7 +3,7 @@ import Image from "../../assets/satelite.webp"
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 
-function Satelite() {
+function Satelite({ position }) { 
   const ref = useRef(null)
 
   useEffect(() => {
@@ -17,7 +17,7 @@ function Satelite() {
   }, [])
 
   return (
-    <figure ref={ref} className="satellite-figure">
+    <figure ref={ref} style={{ position: 'absolute', ...position }} className="satellite-figure">
       <img src={Image} alt="satellite" height={200} width={200} />
     </figure>
   )
