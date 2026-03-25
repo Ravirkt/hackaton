@@ -1,9 +1,13 @@
 .textblock {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     gap: var(--space-sm);
-    padding: var(--space-md); */
     padding-left: var(--space-xxxl);
+    padding: var(--space-md);
+
+    @media (min-width: 1000px) {
+        padding-left: 10rem;
+    }
 }
 
 .section-title {
@@ -49,4 +53,20 @@
     text-decoration-color: var(--accent);
     text-underline-offset: 0.8rem;
     text-decoration-thickness: 0.1rem;
+}
+
+
+.link-container {
+    padding-top: var(--space-lg);
+
+}
+
+.website-link {
+    color: white;
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-xs);
+    width: fit-content;
 }
