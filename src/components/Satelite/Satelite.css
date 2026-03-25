@@ -9,7 +9,7 @@
 }
 
 .satellite-figure img {
-  width: clamp(20rem, 30vw, 40rem);
-  height: clamp(20rem, 30vw, 40rem);
+  width: clamp(15rem, 30vw, 70rem);
+  height: clamp(15rem, 30vw, 70rem);
 
 }
