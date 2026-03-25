@@ -1,21 +1,24 @@
 import './Textblock.css'
+import { useEffect, useRef } from 'react'
+import gsap from 'gsap'
 
-function Textblock() {
+function Textblock({ name, description, made }) {
+  const ref = useRef(null)
+
+  useEffect(() => {
+    gsap.fromTo(ref.current,
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 2, ease: 'power2.out' }
+    )
+  }, [name])
 
   return (
-    <>
-
-<section>
-    <h1 className='section-title'>NEBULA XPLORER</h1>
-
-    <p className='company-text'>Empowering every individual and organisation to achieve their full potential, breaking barriers to space technologies to conquer new frontiers and foster collective progress for society.</p>
-
-    <p className='company-name'>TECHNOLUTION</p>
-</section>
-
-
-
-    </>
+    <div className="textblock" ref={ref}>
+      <h1 className='section-title'>NEBULA XPLORER</h1>
+      <p className='company-text'>{description}</p>
+      <p className='company-name'>{name}</p>
+      <p className='company-made'>{made}</p>
+    </div>
   )
 }
 
