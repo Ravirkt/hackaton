@@ -1,26 +1,24 @@
 import './Navbar.css';
 
-function Navbar() {
+function Navbar({ onNavigate }) {
   return (
-    <nav className="nav">
-      <div className="nav__track">
-        <ul className="nav__list">
-          <li><a className="nav__link" href="#home">NEBULA-Xplorer</a></li>
-          <li><a className="nav__link" href="#Cosine">Cosine</a></li>
-          <li><a className="nav__link" href="#Airbus">Airbus</a></li>
-          <li><a className="nav__link" href="#Technolution">Technolution</a></li>
-          <li><a className="nav__link" href="#Dawn">Dawn Aerospace</a></li>
-          <li><a className="nav__link" href="#Nlr">nlr</a></li>
-          <li><a className="nav__link" href="#Spherical">Spherical</a></li>
-          <li><a className="nav__link" href="#Airborne">Airborne</a></li>
-          <li><a className="nav__link" href="#IsisSpace">IsisSpace</a></li>
-          <li><a className="nav__link" href="#Starion">Starion</a></li>
-          <li><a className="nav__link" href="#Celestia">Celestia</a></li>
-          <li><a className="nav__link" href="#Vdl">Vdl Etg</a></li>
-        </ul>
-      </div>
+    <nav className='navigation-items'>
+      <ul className='all-companies-container'>
+        <li className='company-item'><a onClick={() => onNavigate(0)}>Cosine</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(1)}>Spherical</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(2)}>NLR</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(3)}>Airbus</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(4)}>Technolution</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(5)}>Dawn</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(6)}>Starion</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(7)}>VDL ETG</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(8)}>Airborne</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(9)}>ISISpace</a></li>
+        <li className='company-item'><a onClick={() => onNavigate(10)}>Celestia</a></li>
+      </ul>
     </nav>
-  );
+  )
 }
+
 
 export default Navbar;
