@@ -1,0 +1,52 @@
+.textblock {
+    /* display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding: var(--space-md); */
+    padding-left: var(--space-xxxl);
+}
+
+.section-title {
+    color: var(--main-text-color);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 0.8rem;
+    text-decoration-thickness: 0.15rem;
+}
+
+.company-text::first-letter {
+    -webkit-initial-letter: 2 1;
+    initial-letter: 2 1;
+    color: var(--accent);
+    margin-right: var(--space-sm);
+
+}
+
+.company-text {
+    font-weight: bold;
+    color: var(--main-text-color);
+    padding-top: var(--space-sm);
+    max-width: 25rem;
+
+}
+
+.company-name {
+    font-size: clamp(1.8rem, 2.5vw, 2.2rem);
+    color: var(--accent);
+    font-weight: 200;
+    letter-spacing: 0.2rem;
+
+}
+
+.company-made {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    color: var(--main-text-color);
+    font-weight: 200;
+    letter-spacing: 0.2rem;
+    font-style: italic;
+
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 0.8rem;
+    text-decoration-thickness: 0.1rem;
+}

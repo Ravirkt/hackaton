@@ -1,11 +1,25 @@
 import './Satelite.css'
+import Image from "../../assets/satelite.webp"
+import { useEffect, useRef } from 'react'
+import gsap from 'gsap'
 
 function Satelite() {
+  const ref = useRef(null)
+
+  useEffect(() => {
+    gsap.to(ref.current, {
+      y: -20,
+      duration: 3,
+      ease: 'sine.inOut',
+      repeat: -1,
+      yoyo: true
+    })
+  }, [])
 
   return (
-    <>
-    <h1>satelite component</h1>
-    </>
+    <figure ref={ref} className="satellite-figure">
+      <img src={Image} alt="satellite" height={200} width={200} />
+    </figure>
   )
 }
 
