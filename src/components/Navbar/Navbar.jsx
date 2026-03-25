@@ -1,4 +1,4 @@
-import './Navbar.css'
+import './Navbar.css';
 
 function Navbar({ onNavigate }) {
   return (
@@ -20,4 +20,5 @@ function Navbar({ onNavigate }) {
   )
 }
 
-export default Navbar
+
+export default Navbar;
