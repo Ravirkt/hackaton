@@ -1,26 +1,28 @@
 import './Satelite.css'
 import Image from "../../assets/satelite.webp"
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, forwardRef } from 'react'
 import gsap from 'gsap'
 
-function Satelite() {
-  const ref = useRef(null)
+const Satelite = forwardRef(function Satelite(props, ref) {
+  const innerRef = useRef(null)
 
   useEffect(() => {
-    gsap.to(ref.current, {
+    gsap.to(innerRef.current, {
       y: -20,
       duration: 3,
       ease: 'sine.inOut',
       repeat: -1,
-      yoyo: true
+      yoyo: true,
     })
   }, [])
 
   return (
     <figure ref={ref} className="satellite-figure">
-      <img src={Image} alt="satellite" height={200} width={200} />
+      <div ref={innerRef}>
+        <img src={Image} alt="satellite" height={200} width={200} />
+      </div>
     </figure>
   )
-}
+})
 
 export default Satelite
