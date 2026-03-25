@@ -20,6 +20,8 @@ const companies = [
 ]
 
 function App() {
+  const [current, setCurrent] = useState(0)
+
 return (
   <>
     <Background />
@@ -37,4 +39,3 @@ return (
 
 }
 export default App
-
