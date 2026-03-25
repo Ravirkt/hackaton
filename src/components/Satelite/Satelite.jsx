@@ -1,9 +1,16 @@
 import './Satelite.css'
-import Image from "../../assets/satelite.webp"
 import { useEffect, useRef } from 'react'
+import { Canvas } from '@react-three/fiber'
+import { useGLTF, OrbitControls } from '@react-three/drei'
 import gsap from 'gsap'
+import model from './satelite.glb'
 
-function Satelite() {
+function SateliteModel() {
+  const { scene } = useGLTF(model)
+  return <primitive object={scene} scale={1} />
+}
+
+function Satelite({ position }) {
   const ref = useRef(null)
 
   useEffect(() => {
@@ -17,8 +24,15 @@ function Satelite() {
   }, [])
 
   return (
-    <figure ref={ref} className="satellite-figure">
-      <img src={Image} alt="satellite" height={200} width={200} />
+    <figure ref={ref} className="satellite-figure" style={{ position: 'absolute', ...position }}>
+      <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
+        <ambientLight intensity={2} />
+        <directionalLight position={[5, 5, 5]} intensity={3} />
+        <directionalLight position={[-5, -5, -5]} intensity={1} />
+        <pointLight position={[0, 10, 0]} intensity={2} />
+        <SateliteModel />
+        <OrbitControls enableZoom={false} enablePan={false} />
+      </Canvas>
     </figure>
   )
 }
