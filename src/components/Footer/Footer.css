@@ -1,5 +1,5 @@
 .trim {
-    position: fixed;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -7,4 +7,5 @@
   padding: var(--space-sm);
   display: flex;
   background-color: var(--accent);
+  margin-top: var(--space-md);
 }
