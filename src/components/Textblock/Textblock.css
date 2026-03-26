@@ -31,7 +31,6 @@
     color: var(--main-text-color);
     padding-top: var(--space-sm);
     max-width: 25rem;
-
 }
 
 .company-name {
@@ -39,7 +38,6 @@
     color: var(--accent);
     font-weight: 200;
     letter-spacing: 0.2rem;
-
 }
 
 .company-made {
@@ -55,18 +53,31 @@
     text-decoration-thickness: 0.1rem;
 }
 
-
 .link-container {
     padding-top: var(--space-lg);
-
 }
 
 .website-link {
-    color: white;
+    color: var(--main-text-color);
+    text-decoration: none;
     font-size: clamp(0.8rem, 2.5vw, 1rem);
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: var(--space-xs);
+    gap: var(--space-sm);
     width: fit-content;
+
+    text-decoration: underline;
+    text-decoration-color: var(--main-text-color);
+    text-underline-offset: 0.2rem;
+    text-decoration-thickness: 0.05rem;
 }
+
+.website-link:focus-visible {
+    outline: none;
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 0.2rem;
+    text-decoration-thickness: 0.15rem;
+}
+

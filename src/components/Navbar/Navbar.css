@@ -1,12 +1,10 @@
 .navigation-items {
-  background-color: rgba(255, 255, 255, 0);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
-  padding: var(--space-sm);
-  /* border-top: 0.2rem solid var(--accent); */
+  padding: var(--space-md);
   border-bottom: 0.01rem solid var(--accent);
 }
 
@@ -17,18 +15,7 @@
   list-style-type: none;
   justify-content: space-between;
   overflow: scroll;
-
   align-items: center;
-  
-
-  /* @media (min-width: 800px) {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    list-style-type: none;
-    justify-content: space-between;
-    padding: 1rem;
-  } */
 }
 
 .all-companies-container::-webkit-scrollbar {
@@ -36,18 +23,27 @@
 }
 
 .all-companies-container {
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-.company-item {
+.company-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
   padding: var(--space-xs);
-  /* background-color: var(--accent); */
-  /* border-radius: 0.3rem; */
   cursor: pointer;
   font-size: clamp(0.8rem, 2.5vw, 1rem);
+  color: var(--main-text-color);
+  font-family: "jet brains";
+}
 
-
+.company-item button:focus-visible {
+  outline: none;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 0.2rem;
+  text-decoration-thickness: 0.15rem;
 }
 
 .all-companies-container li a {
@@ -55,14 +51,6 @@
   color: var(--main-text-color);
 }
 
-.nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: auto;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
-}
 
 
 
@@ -90,25 +78,3 @@
 
 
 
-
-
-/* .nav__list {
-    display: flex;
-    gap: 4rem;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    margin: 0 30px;
-}
-
-.nav__link {
-    color: White;
-    font-family: JetBrains Mono, monospace;
-    text-decoration: none;
-    font-size: 20px;
-    width: max-content;
-}
-
-.nav__link.active {
-    border-bottom: 2px solid #5bdeff;
-} */

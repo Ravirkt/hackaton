@@ -4,17 +4,17 @@ function Navbar({ onNavigate }) {
   return (
     <nav className='navigation-items'>
       <ul className='all-companies-container'>
-        <li className='company-item'><a onClick={() => onNavigate(0)}>Cosine</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(1)}>Spherical</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(2)}>NLR</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(3)}>Dawn</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(4)}>Airbus</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(5)}>Technolution</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(6)}>Airborne</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(7)}>ISISpace</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(8)}>Starion</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(9)}>VDL</a></li>
-        <li className='company-item'><a onClick={() => onNavigate(10)}>Celestia</a></li>
+        <li className='company-item'><button onClick={() => onNavigate(0)}>Cosine</button></li>
+        <li className='company-item'><button onClick={() => onNavigate(1)}>Spherical</button></li>
+        <li className='company-item'><button onClick={() => onNavigate(2)}>NLR</button></li>
+        <li className='company-item'><button onClick={() => onNavigate(3)} >Dawn</button></li>
+        <li className='company-item'><button onClick={() => onNavigate(4)}>Airbus</button></li>
+        <li className='company-item'><button onClick={() => onNavigate(5)}>Technolution</button></li>
+        <li className='company-item'><button onClick={() => onNavigate(6)}>Airborne</button></li>
+        <li className='company-item'><button onClick={() => onNavigate(7)}>ISISpace</button></li>
+        <li className='company-item'><button onClick={() => onNavigate(8)}>Starion</button></li>
+        <li className='company-item'><button onClick={() => onNavigate(9)}>VDL</button></li>
+        <li className='company-item'><button onClick={() => onNavigate(10)}>Celestia</button></li>
       </ul>
     </nav>
   )
