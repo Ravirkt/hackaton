@@ -1,10 +1,12 @@
-.trim {
-    position: fixed;
+/* .trim {
+  position: fixed;
   bottom: 0;
   left: 0;
+
   width: 100%;
   z-index: 100;
   padding: var(--space-sm);
   display: flex;
   background-color: var(--accent);
-}
+} */
+

@@ -4,7 +4,7 @@ import Background from './components/Background/Background.jsx'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Satelite from './components/Satelite/Satelite.jsx'
 import Textblock from './components/Textblock/Textblock.jsx'
-import Footer from './components/Footer/Footer.jsx'
+// import Footer from './components/Footer/Footer.jsx'
 import gsap from 'gsap'
 
 const companies = [
@@ -86,7 +86,7 @@ function App() {
         />
         <Satelite ref={satelliteRef} />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
