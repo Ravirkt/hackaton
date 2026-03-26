@@ -4,7 +4,7 @@
     gap: var(--space-sm);
     padding-left: var(--space-xxxl);
     padding: var(--space-md);
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-xxxl);
 
 
     @media (min-width: 1000px) {
