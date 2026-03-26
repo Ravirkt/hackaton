@@ -86,7 +86,7 @@ function App() {
         />
         <Satelite ref={satelliteRef} />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
