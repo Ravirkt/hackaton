@@ -104,7 +104,7 @@ function Background() {
 
     newShootingStar(); // fire once immediately
     // then fire every 30 seconds
-    const interval = setInterval(newShootingStar, 30000);
+    const interval = setInterval(newShootingStar, 5000);
 
     let frame;
 

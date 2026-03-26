@@ -1,0 +1,15 @@
+.satellite-figure {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.satellite-figure img {
+  width: clamp(15rem, 30vw, 70rem);
+  height: clamp(15rem, 30vw, 70rem);
+
+}
