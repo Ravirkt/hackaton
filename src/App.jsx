@@ -62,7 +62,7 @@ function App() {
 
     tl.fromTo(satelliteRef.current,
       { scale: 0.05, x: 120, y: 80, opacity: 0, rotation: 15 },
-      { scale: 1, x: 0, y: 0, opacity: 1, rotation: 0, duration: 1.0, ease: 'power3.out' }
+      { scale: 1, x: 0, y: 0, opacity: 1, rotation: 0, duration: 1.5, ease: 'power3.out' }
     )
 
     tl.fromTo(textblockRef.current,

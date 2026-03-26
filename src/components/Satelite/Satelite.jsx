@@ -19,7 +19,7 @@ const Satelite = forwardRef(function Satelite(props, ref) {
   return (
     <figure ref={ref} className="satellite-figure">
       <div ref={innerRef}>
-        <img src={Image} alt="satellite" height={200} width={200} />
+        <img src={Image} alt="satellite" height={200} width={200} loading='lazy' />
       </div>
     </figure>
   )
