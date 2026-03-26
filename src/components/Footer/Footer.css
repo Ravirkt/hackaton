@@ -7,5 +7,4 @@
   padding: var(--space-sm);
   display: flex;
   background-color: var(--accent);
-  margin-top: var(--space-md);
 }
