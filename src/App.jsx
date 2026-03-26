@@ -85,8 +85,8 @@ function App() {
           link={companies[current].link}
         />
         <Satelite ref={satelliteRef} />
+        <Footer />
       </div>
-      {/* <Footer /> */}
     </>
   )
 }
